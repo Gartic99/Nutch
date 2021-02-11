@@ -4,58 +4,5 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-    <property>
-		<name>http.agent.name</name>
-		<value>Spider Nutch</value>
-    </property>
-    <property>
-	<name>tika.boilerpipe</name>
-		<value>true</value> 
-	</property>
-	<property>
-		<name>tika.boilerpipe.extractor</name>
-		<value>ArticleExtractor</value>
-	</property>
-	<property>
-    		<name>urlmeta.tags</name>
-    		<value>radix</value>
-  	</property>
-  	<property>
-    <name>selenium.hub.port</name>
-    <value>4444</value>
-    <description>Selenium Hub Location connection port</description>
-  </property>
-
-  <property>
-    <name>selenium.hub.path</name>
-    <value>/wd/hub</value>
-    <description>Selenium Hub Location connection path</description>
-  </property>
-
-  <property>
-    <name>selenium.hub.host</name>
-    <value>selenium-hub</value>
-    <description>Selenium Hub Location connection host</description>
-  </property>
-
-  <property>
-    <name>selenium.hub.protocol</name>
-    <value>http</value>
-    <description>Selenium Hub Location connection protocol</description>
-  </property>
-
-	<property>
-        <name>plugin.includes</name>
-    	<value>parse-tika|protocol-http|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|indexer-solr|scoring-opic|urlnormalizer-(pass|regex|basic)|scoring-opic|urlmeta</value>
-        <description>Regular expression naming plugin directory names to
-           include.  Any plugin not matching this expression is excluded.
-            In any case you need at least include the nutch-extensionpoints plugin. By
-           default Nutch includes crawling just HTML and plain text via HTTP,
-           and basic indexing and search plugins. In order to use HTTPS please enable
-            protocol-httpclient, but be aware of possible intermittent problems with the
-           underlying commons-httpclient library.
-        </description>
-    </property>
 
 </configuration>
-
